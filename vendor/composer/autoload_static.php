@@ -54,6 +54,10 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
             'Webmozart\\Assert\\' => 17,
             'Webimpress\\SafeWriter\\' => 22,
         ),
+        'U' => 
+        array (
+            'Usuarios\\' => 9,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -163,6 +167,10 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         'Webimpress\\SafeWriter\\' => 
         array (
             0 => __DIR__ . '/..' . '/webimpress/safe-writer/src',
+        ),
+        'Usuarios\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/module/Usuarios/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
