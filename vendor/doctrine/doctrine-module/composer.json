@@ -1,0 +1,122 @@
+{
+    "name": "doctrine/doctrine-module",
+    "description": "Laminas Module that provides Doctrine basic functionality required for ORM and ODM modules",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "http://www.doctrine-project.org/",
+    "keywords": [
+        "doctrine",
+        "module",
+        "laminas"
+    ],
+    "authors": [
+        {
+            "name": "Kyle Spraggs",
+            "email": "theman@spiffyjr.me",
+            "homepage": "http://www.spiffyjr.me/"
+        },
+        {
+            "name": "Marco Pivetta",
+            "email": "ocramius@gmail.com",
+            "homepage": "http://marco-pivetta.com/"
+        },
+        {
+            "name": "Guilherme Blanco",
+            "email": "guilhermeblanco@hotmail.com"
+        },
+        {
+            "name": "Micha\u00ebl Gallego",
+            "email": "mic.gallego@gmail.com",
+            "homepage": "http://www.michaelgallego.fr"
+        },
+        {
+            "name": "Tom H Anderson",
+            "email": "tom.h.anderson@gmail.com",
+            "homepage": "https://tomhanderson.com"
+        }
+    ],
+    "extra": {
+        "laminas": {
+            "config-provider": "DoctrineModule\\ConfigProvider",
+            "module": "DoctrineModule"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ~8.0.0 || ~8.1.0",
+        "container-interop/container-interop": "^1.2.0",
+        "doctrine/annotations": "^1.13.2",
+        "doctrine/cache": "^1.12.1",
+        "doctrine/collections": "^1.6.8",
+        "doctrine/doctrine-laminas-hydrator": "^3.0.0",
+        "doctrine/event-manager": "^1.1.1",
+        "doctrine/inflector": "^2.0.4",
+        "doctrine/persistence": "^2.3.0",
+        "laminas/laminas-authentication": "^2.9.0",
+        "laminas/laminas-cache": "^3.1.2",
+        "laminas/laminas-eventmanager": "^3.4.0",
+        "laminas/laminas-form": "^3.1.1",
+        "laminas/laminas-modulemanager": "^2.11.0",
+        "laminas/laminas-mvc": "^3.3.0",
+        "laminas/laminas-paginator": "^2.12.2",
+        "laminas/laminas-servicemanager": "^3.10.0",
+        "laminas/laminas-stdlib": "^3.7.1",
+        "laminas/laminas-validator": "^2.16.0",
+        "symfony/console": "^5.4.3 || ^6.0.3"
+    },
+    "provide": {
+        "laminas/laminas-cache-storage-implementation": "1.0.0"
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "^9.0.0",
+        "doctrine/orm": "^2.11.1",
+        "jangregor/phpstan-prophecy": "^1.0.0",
+        "laminas/laminas-cache-storage-adapter-blackhole": "^2.0.0",
+        "laminas/laminas-cache-storage-adapter-memory": "^2.0.0",
+        "laminas/laminas-i18n": "^2.13.0",
+        "laminas/laminas-log": "^2.15.0",
+        "laminas/laminas-serializer": "^2.12.0",
+        "laminas/laminas-session": "^2.12.0",
+        "phpspec/prophecy-phpunit": "^2.0.1",
+        "phpstan/phpstan": "^1.4.6",
+        "phpstan/phpstan-phpunit": "^1.0.0",
+        "phpunit/phpunit": "^9.5.13",
+        "predis/predis": "^1.1.10",
+        "vimeo/psalm": "^4.20.0"
+    },
+    "conflict": {
+        "doctrine/orm": "2.12.0"
+    },
+    "suggest": {
+        "doctrine/data-fixtures": "Data Fixtures if you want to generate test data or bootstrap data for your deployments"
+    },
+    "autoload": {
+        "psr-4": {
+            "DoctrineModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DoctrineModuleTest\\": "tests/"
+        }
+    },
+    "bin": [
+        "bin/doctrine-module"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@phpstan",
+            "@psalm",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "phpstan": "phpstan analyse",
+        "psalm": "psalm --stats",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover=coverage.xml"
+    }
+}

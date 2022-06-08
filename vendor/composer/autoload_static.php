@@ -13,6 +13,8 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '07d7f1a47144818725fd8d91a907ac57' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/create_uploaded_file.php',
         'da94ac5d3ca7d2dbab84ce561ce72bfd' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_headers_from_sapi.php',
         '3d97c8dcdfba8cb85d3b34f116bb248b' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_method_from_sapi.php',
@@ -30,8 +32,7 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         '786bf90caabc9e09b6ad4cc5ca8f0e30' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_uploaded_files.legacy.php',
         '751a5a3f463e4be759be31748b61737c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.legacy.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '3f8ee9969da604d0f15c841b77b11450' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/double-pass-middleware.php',
         'ee5523a5d51d6d51030227439db1ef74' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/host.php',
         '5f6e29ca023a0bdefa2476adb465d527' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/middleware.php',
@@ -62,6 +63,7 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Php73\\' => 23,
+            'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
             'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
@@ -77,6 +79,7 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
@@ -99,6 +102,7 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
             'Laminas\\ServiceManager\\' => 23,
             'Laminas\\Router\\' => 15,
             'Laminas\\Psr7Bridge\\' => 19,
+            'Laminas\\Paginator\\' => 18,
             'Laminas\\Mvc\\Plugin\\Prg\\' => 23,
             'Laminas\\Mvc\\Plugin\\Identity\\' => 28,
             'Laminas\\Mvc\\Plugin\\FlashMessenger\\' => 34,
@@ -125,6 +129,7 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
             'Laminas\\Config\\' => 15,
             'Laminas\\ComponentInstaller\\' => 27,
             'Laminas\\Cli\\' => 12,
+            'Laminas\\Cache\\' => 14,
             'Laminas\\Authentication\\' => 23,
         ),
         'I' => 
@@ -137,9 +142,20 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         ),
         'D' => 
         array (
+            'Doctrine\\Persistence\\' => 21,
+            'Doctrine\\ORM\\' => 13,
+            'Doctrine\\Laminas\\Hydrator\\' => 26,
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Inflector\\' => 19,
+            'Doctrine\\Deprecations\\' => 22,
+            'Doctrine\\DBAL\\' => 14,
             'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Collections\\' => 28,
+            'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
+            'DoctrineORMModule\\' => 18,
+            'DoctrineModule\\' => 15,
             'DeepCopy\\' => 9,
         ),
         'B' => 
@@ -179,6 +195,10 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         'Symfony\\Polyfill\\Php73\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
+        ),
+        'Symfony\\Polyfill\\Php72\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -227,6 +247,10 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -305,6 +329,10 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         'Laminas\\Psr7Bridge\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-psr7bridge/src',
+        ),
+        'Laminas\\Paginator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-paginator/src',
         ),
         'Laminas\\Mvc\\Plugin\\Prg\\' => 
         array (
@@ -410,6 +438,10 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-cli/src',
         ),
+        'Laminas\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-cache/src',
+        ),
         'Laminas\\Authentication\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-authentication/src',
@@ -422,17 +454,63 @@ class ComposerStaticInit6358863da18a4dfdf2df3b5157d53df2
         array (
             0 => __DIR__ . '/..' . '/fig/http-message-util/src',
         ),
+        'Doctrine\\Persistence\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/persistence/src/Persistence',
+        ),
+        'Doctrine\\ORM\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/orm/lib/Doctrine/ORM',
+        ),
+        'Doctrine\\Laminas\\Hydrator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-laminas-hydrator/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
+        'Doctrine\\Deprecations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+        ),
+        'Doctrine\\DBAL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/dbal/src',
         ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
+        'Doctrine\\Common\\Collections\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            1 => __DIR__ . '/..' . '/doctrine/persistence/src/Common',
+            2 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+        'DoctrineORMModule\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-orm-module/src',
+        ),
+        'DoctrineModule\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-module/src',
         ),
         'DeepCopy\\' => 
         array (
