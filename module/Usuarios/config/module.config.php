@@ -1,12 +1,14 @@
 <?php
-namespace ZendSkeletonModule;
+namespace UsuariosModule;
 
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\Router\Http\Literal;
+use Laminas\Router\Http\Segment;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 return [
     'controllers' => [
         'factories' => [
-            Controller\SkeletonController::class => InvokableFactory::class,
+            Controller\UsuariosController::class => InvokableFactory::class,
         ],
     ],
     'router' => [
@@ -17,7 +19,7 @@ return [
                     // Change this to something specific to your module
                     'route'    => '/module-specific-root',
                     'defaults' => [
-                        'controller'    => Controller\SkeletonController::class,
+                        'controller'    => Controller\UsuariosController::class,
                         'action'        => 'index',
                     ],
                 ],
